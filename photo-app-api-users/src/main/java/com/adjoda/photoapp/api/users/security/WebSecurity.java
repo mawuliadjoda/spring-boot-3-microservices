@@ -21,7 +21,7 @@ public class WebSecurity {
         http.csrf(AbstractHttpConfigurer::disable);
 
         http.authorizeHttpRequests(request -> request.requestMatchers(HttpMethod.POST, "/api/v1/users").permitAll()
-                        .requestMatchers(new AntPathRequestMatcher("/h2-console")).permitAll())
+                        .requestMatchers(new AntPathRequestMatcher("/h2-console/**")).permitAll())
 
                 .sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
