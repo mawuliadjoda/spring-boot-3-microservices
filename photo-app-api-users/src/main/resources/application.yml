@@ -1,0 +1,19 @@
+
+server:
+  port: ${PORT:0} #port number automatically assign
+
+spring:
+  application:
+    name: users-ws
+  devtools:
+    restart:
+      enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8010/eureka"
+
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: localhost   # useful to overcome java.net.UnknownHostException: Failed to resolve  [A(1), AAAA(28)]

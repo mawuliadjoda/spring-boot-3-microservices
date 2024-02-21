@@ -1,0 +1,15 @@
+
+server:
+  port: 0  #port number automatically assign
+
+spring:
+  application:
+    name: account-ws
+  devtools:
+    restart:
+      enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8010/eureka"
