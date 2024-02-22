@@ -17,15 +17,24 @@ spring:
             - RemoveRequestHeader=Cookie
             #- RewritePath=/users-ws/(?<segment>.*), /$\{segment}
 
+        - id: users-ws-login
+          uri: lb://users-ws
+          predicates:
+            - Path=/users-ws/api/v1/users/login
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/users-ws/(?<segment>.*), /$\{segment}
+
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
 
-  #cloud:
-    #gateway:
-      #discovery:
-        #locator:
+          #cloud:
+          #gateway:
+          #discovery:
+          #locator:
           #enabled: true
           #lower-case-service-id: true
 

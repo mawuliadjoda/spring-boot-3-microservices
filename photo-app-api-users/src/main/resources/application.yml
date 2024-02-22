@@ -1,7 +1,4 @@
 
-gateway:
-  ip: 172.30.80.1
-
 server:
   port: ${PORT:0} #port number automatically assign
 
@@ -30,3 +27,15 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     hostname: localhost   # useful to overcome java.net.UnknownHostException: Failed to resolve  [A(1), AAAA(28)]
+
+
+
+gateway:
+  ip: 172.30.80.1
+token:
+  expiration_time: 3600000
+  secret: dgjorufhrsnjdu438fkdj38fdmcv7dm3ckvhrsnjjuwelueivhe848fhedldh5ndk
+
+login:
+  url:
+    path: /api/v1/users/login
