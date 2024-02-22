@@ -2,8 +2,8 @@ package com.adjoda.photoapp.api.users.ui.controller;
 
 import com.adjoda.photoapp.api.users.ui.model.CreateUserRequestModel;
 import com.adjoda.photoapp.api.users.ui.model.CreateUserResponseModel;
-import com.adjoda.photoapp.api.users.ui.service.UsersService;
-import com.adjoda.photoapp.api.users.ui.shared.UserDTO;
+import com.adjoda.photoapp.api.users.service.UsersService;
+import com.adjoda.photoapp.api.users.shared.UserDTO;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;

@@ -1,4 +1,4 @@
-package com.adjoda.photoapp.api.users.ui.entity;
+package com.adjoda.photoapp.api.users.entity;
 
 import jakarta.persistence.*;
 import lombok.Builder;

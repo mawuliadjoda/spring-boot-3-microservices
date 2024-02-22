@@ -1,4 +1,4 @@
-package com.adjoda.photoapp.api.users.ui.shared;
+package com.adjoda.photoapp.api.users.shared;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,8 +1,8 @@
-package com.adjoda.photoapp.api.users.ui.service;
+package com.adjoda.photoapp.api.users.service;
 
-import com.adjoda.photoapp.api.users.ui.entity.UserEntity;
-import com.adjoda.photoapp.api.users.ui.repository.UsersRepository;
-import com.adjoda.photoapp.api.users.ui.shared.UserDTO;
+import com.adjoda.photoapp.api.users.entity.UserEntity;
+import com.adjoda.photoapp.api.users.repository.UsersRepository;
+import com.adjoda.photoapp.api.users.shared.UserDTO;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
